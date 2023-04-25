@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        background-color: #18191a;
+      }
+
+      .main-container {
+        /* margin-top: 20px; */
+        display: grid;
+        color: white;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        font-size: 14px;
+        color: #b0b3b8;
+      }
+
+      .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #242526;
+        height: 60px;
+        align-items: center;
+      }
+
+      .icon {
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      #search-box {
+        /* padding: 10px 20px; */
+        height: 40px;
+        width: 100%;
+        border-radius: 20px;
+        max-width: 620px;
+        background-color: #3a3b3c;
+        padding: 10px 20px;
+        border: none;
+        color: #b0b3b8;
+      }
+
+      .mid-cols {
+        max-width: 620px;
+      }
+
+      .mid-cols-container {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #242526;
+        border-radius: 10px;
+      }
+
+      ::placeholder {
+        color: #b0b3b8;
+        font-size: 14px;
+      }
+
+      .left-cols-item,
+      .right-cols-item {
+        padding-left: 20px;
+        margin: 10px 0 10px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .icons {
+        justify-self: end;
+      }
+
+      nav {
+        position: sticky;
+        top: 0;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="fakelogo.png"
+          alt="fake"
+          height="38px"
+          style="margin-left: 20px"
+        />
+      </div>
+      <div class="input-search">
+        <input
+          type="text"
+          placeholder="&#x1F50D; Search Fakebook"
+          id="search-box"
+        />
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <img
+            src="https://thumbs.dreamstime.com/b/dark-facebook-messenger-icon-messaging-app-platform-originally-developed-as-chat-company-revamped-its-service-140088308.jpg"
+            alt="profile-pic"
+            width="38px"
+            style="margin-right: 10px; border-radius: 50%"
+          />
+        </div>
+        <div class="icon">
+          <img
+            src="https://icons-for-free.com/iconfiles/png/512/globe+notification+one+notification+icon-1320166594953441498.png"
+            alt="profile-pic"
+            width="38px"
+            style="margin-right: 10px; border-radius: 50%"
+          />
+        </div>
+        <div class="icon">
+          <img
+            src="avatar.jpg"
+            alt="profile-pic"
+            width="38px"
+            style="margin-right: 20px; border-radius: 50%"
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="left-cols">
+        <div class="sticky">
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Home
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Watch
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Marketplace
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Livestream
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Gaming
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Home 2
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Watch 2
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Marketplace 2
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Streaming Gaming Buying
+            </p>
+          </div>
+          <div class="left-cols-item">
+            <img
+              src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+              alt="Lorem"
+              width="38px"
+            />
+            <p style="margin-left: 10px; font-weight: 600; color: white">
+              Group
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mid-cols">
+        <div>
+          <div class="mid-cols-container">
+            <div
+              class="icon"
+              style="display: flex; justify-items: start; padding: 10px"
+            >
+              <img
+                src="avatar.jpg"
+                alt="profile-pic"
+                width="38px"
+                style="margin-right: 20px; border-radius: 50%"
+              />
+              <input
+                type="text"
+                placeholder="Bạn đang nghĩ gì?"
+                style="
+                  height: 38px;
+                  width: 100%;
+                  padding: 0 0 0 20px;
+                  border-radius: 20px;
+                  border: none;
+                  background-color: #3a3b3c;
+                "
+              />
+            </div>
+            <hr
+              style="
+                border: none;
+                border-top: 1px solid #3a3b3c;
+                margin-top: 10px;
+              "
+            />
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 15px 0 10px 0;
+                justify-items: center;
+              "
+            >
+              <div style="display: flex; align-items: center">
+                <img
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/c0dWho49-X3.png"
+                  alt="Live icon"
+                />
+                <p style="display: inline-block; margin: 0 0 0 10px">
+                  Live video
+                </p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <img
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png"
+                  alt="Photo icon"
+                />
+                <p style="display: inline-block; margin: 0 0 0 10px">
+                  Photo/video
+                </p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <img
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png"
+                  alt="Feeling icon"
+                />
+                <p style="display: inline-block; margin: 0 0 0 10px">
+                  Feeling/activity
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mid-cols-container">
+            <div
+              class="icon"
+              style="display: flex; justify-items: start; padding: 10px"
+            >
+              <img
+                src="avatar.jpg"
+                alt="profile-pic"
+                width="38px"
+                style="margin-right: 20px; border-radius: 50%"
+              />
+              <div>
+                <p><strong>Lorem Ipsum</strong></p>
+                <p style="font-size: 12px; margin-top: 4px">10 minutes ago</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              iaculis a est vitae efficitur. Cras sodales mattis venenatis.
+              Vivamus vitae venenatis tellus. Fusce eu leo tellus. Aliquam
+              fringilla condimentum consequat. Mauris dictum commodo orci, id
+              porta nisl volutpat et. Duis eget massa faucibus, pharetra sapien
+              eu, fermentum tortor. Sed lorem metus, lobortis et ultrices quis,
+              rutrum in nulla. Proin ut pellentesque eros. Vivamus consectetur
+              velit non urna egestas, in lacinia dolor dictum. Class aptent
+              taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Integer aliquam in odio at volutpat. Ut id
+              lacus ac ante vulputate elementum.
+            </p>
+            <br />
+            <p>
+              Praesent egestas velit sem, a eleifend eros interdum ac. Maecenas
+              ac lacus arcu. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia curae; Aliquam congue, ante ac
+              pretium efficitur, urna felis condimentum felis, a laoreet urna
+              arcu quis sem. Integer tincidunt semper quam, nec finibus nisl
+              facilisis sit amet. Sed convallis euismod tristique. Ut suscipit
+              ipsum ac congue commodo. Integer sit amet luctus felis.
+              Suspendisse maximus ac magna vitae aliquet.
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1677579016602-d342f911d11c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="Pic"
+              style="margin-top: 10px"
+              width="100%"
+              ;
+            />
+            <hr
+              style="
+                border: none;
+                border-top: 1px solid #3a3b3c;
+                margin-top: 10px;
+              "
+            />
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 15px 0 10px 0;
+                justify-items: center;
+              "
+            >
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -389px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Like</p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -351px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Comment</p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -408px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mid-cols-container">
+            <div
+              class="icon"
+              style="display: flex; justify-items: start; padding: 10px"
+            >
+              <img
+                src="avatar.jpg"
+                alt="profile-pic"
+                width="38px"
+                style="margin-right: 20px; border-radius: 50%"
+              />
+              <div>
+                <p><strong>Lorem Ipsum</strong></p>
+                <p style="font-size: 12px; margin-top: 4px">10 minutes ago</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              iaculis a est vitae efficitur. Cras sodales mattis venenatis.
+              Vivamus vitae venenatis tellus. Fusce eu leo tellus. Aliquam
+              fringilla condimentum consequat. Mauris dictum commodo orci, id
+              porta nisl volutpat et. Duis eget massa faucibus, pharetra sapien
+              eu, fermentum tortor. Sed lorem metus, lobortis et ultrices quis,
+              rutrum in nulla. Proin ut pellentesque eros. Vivamus consectetur
+              velit non urna egestas, in lacinia dolor dictum. Class aptent
+              taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Integer aliquam in odio at volutpat. Ut id
+              lacus ac ante vulputate elementum.
+            </p>
+            <br />
+            <p>
+              Praesent egestas velit sem, a eleifend eros interdum ac. Maecenas
+              ac lacus arcu. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia curae; Aliquam congue, ante ac
+              pretium efficitur, urna felis condimentum felis, a laoreet urna
+              arcu quis sem. Integer tincidunt semper quam, nec finibus nisl
+              facilisis sit amet. Sed convallis euismod tristique. Ut suscipit
+              ipsum ac congue commodo. Integer sit amet luctus felis.
+              Suspendisse maximus ac magna vitae aliquet.
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1677579016602-d342f911d11c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="Pic"
+              style="margin-top: 10px"
+              width="100%"
+              ;
+            />
+            <hr
+              style="
+                border: none;
+                border-top: 1px solid #3a3b3c;
+                margin-top: 10px;
+              "
+            />
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 15px 0 10px 0;
+                justify-items: center;
+              "
+            >
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -389px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Like</p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -351px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Comment</p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -408px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mid-cols-container">
+            <div
+              class="icon"
+              style="display: flex; justify-items: start; padding: 10px"
+            >
+              <img
+                src="avatar.jpg"
+                alt="profile-pic"
+                width="38px"
+                style="margin-right: 20px; border-radius: 50%"
+              />
+              <div>
+                <p><strong>Lorem Ipsum</strong></p>
+                <p style="font-size: 12px; margin-top: 4px">10 minutes ago</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              iaculis a est vitae efficitur. Cras sodales mattis venenatis.
+              Vivamus vitae venenatis tellus. Fusce eu leo tellus. Aliquam
+              fringilla condimentum consequat. Mauris dictum commodo orci, id
+              porta nisl volutpat et. Duis eget massa faucibus, pharetra sapien
+              eu, fermentum tortor. Sed lorem metus, lobortis et ultrices quis,
+              rutrum in nulla. Proin ut pellentesque eros. Vivamus consectetur
+              velit non urna egestas, in lacinia dolor dictum. Class aptent
+              taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Integer aliquam in odio at volutpat. Ut id
+              lacus ac ante vulputate elementum.
+            </p>
+            <br />
+            <p>
+              Praesent egestas velit sem, a eleifend eros interdum ac. Maecenas
+              ac lacus arcu. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia curae; Aliquam congue, ante ac
+              pretium efficitur, urna felis condimentum felis, a laoreet urna
+              arcu quis sem. Integer tincidunt semper quam, nec finibus nisl
+              facilisis sit amet. Sed convallis euismod tristique. Ut suscipit
+              ipsum ac congue commodo. Integer sit amet luctus felis.
+              Suspendisse maximus ac magna vitae aliquet.
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1677579016602-d342f911d11c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              alt="Pic"
+              style="margin-top: 10px"
+              width="100%"
+              ;
+            />
+            <hr
+              style="
+                border: none;
+                border-top: 1px solid #3a3b3c;
+                margin-top: 10px;
+              "
+            />
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 15px 0 10px 0;
+                justify-items: center;
+              "
+            >
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -389px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Like</p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -351px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Comment</p>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div
+                  style="
+                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/77DWt4rzuTp.png');
+                    background-position: 0 -408px;
+                    background-size: auto;
+                    width: 18px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                  "
+                ></div>
+                <p style="display: inline-block; margin: 0 0 0 10px">Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="right-cols"
+        style="padding-right: 50px; padding-top: 10px; justify-self: flex-end"
+      >
+        <h2 style="font-family: Arial, Helvetica, sans-serif">Contact</h2>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="right-cols-item">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2620/PNG/512/among_us_player_red_icon_156942.png"
+            alt="Amogus"
+            style="width: 38px; border-radius: 50%; background-color: red"
+          />
+          <p style="margin-left: 10px; color: white; font-weight: 700">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
